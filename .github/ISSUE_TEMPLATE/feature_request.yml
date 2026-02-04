@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest a new practice lab or improvement
+title: "[Request]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to add/change?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this useful?
+      description: Who benefits and how?
+    validations:
+      required: false

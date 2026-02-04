@@ -1,0 +1,19 @@
+<Solution>
+    <Folder Name="/labs/" />
+    <Folder Name="/labs/01-uml/">
+        <Project Path="labs/01-uml/CS1302.Lab01.Uml/CS1302.Lab01.Uml.csproj" />
+    </Folder>
+    <Folder Name="/labs/02-arrays-1d/">
+        <Project Path="labs/02-arrays-1d/CS1302.Lab02.Arrays1D/CS1302.Lab02.Arrays1D.csproj" />
+    </Folder>
+    <Folder Name="/labs/03-arrays-2d/">
+        <Project Path="labs/03-arrays-2d/CS1302.Lab03.Arrays2D/CS1302.Lab03.Arrays2D.csproj" />
+    </Folder>
+    <Folder Name="/labs/04-properties-exceptions/">
+        <Project Path="labs/04-properties-exceptions/CS1302.Lab04.PropertiesExceptions/CS1302.Lab04.PropertiesExceptions.csproj" />
+    </Folder>
+    <Folder Name="/shared/">
+        <Project Path="shared/CS1302.Common/CS1302.Common.csproj" />
+    </Folder>
+    <Project Path="../tests/CS1302.Labs.Tests/CS1302.Labs.Tests.csproj" />
+</Solution>
