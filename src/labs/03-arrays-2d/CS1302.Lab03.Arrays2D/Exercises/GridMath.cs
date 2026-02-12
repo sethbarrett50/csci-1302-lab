@@ -64,7 +64,10 @@ public static class GridMath
 
         if (rows == 0 || cols == 0)
         {
-            throw new ArgumentException("Grid must have at least 1 row and 1 column.", nameof(grid));
+            throw new ArgumentException(
+                "Grid must have at least 1 row and 1 column.",
+                nameof(grid)
+            );
         }
 
         int bestVal = grid[0, 0];

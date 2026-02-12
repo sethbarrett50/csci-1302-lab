@@ -79,7 +79,7 @@ tool-restore:
 format: tool-restore
 	$(DOTNET) csharpier format .
 
-lint: tool-restore
+lint: format tool-restore
 	$(DOTNET) csharpier check .
 	$(DOTNET) build "$(SLN)" -c "$(CONFIG)" --nologo
 
