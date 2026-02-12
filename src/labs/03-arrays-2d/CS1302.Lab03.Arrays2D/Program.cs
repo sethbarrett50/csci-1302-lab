@@ -27,7 +27,7 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("-- Max value + coordinates --");
-        var max = GridMath.MaxValue(grid);
+        MaxCell max = GridMath.MaxValue(grid);
         Console.WriteLine($"Max: {max.Value} at (row={max.Row}, col={max.Col})");
     }
 

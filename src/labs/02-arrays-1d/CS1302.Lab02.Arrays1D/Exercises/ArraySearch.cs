@@ -42,7 +42,7 @@ public static class ArraySearch
             throw new ArgumentNullException(nameof(to));
         }
 
-        var comparison = ignoreCase ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal;
+        StringComparison comparison = ignoreCase ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal;
 
         int replaced = 0;
         for (int i = 0; i < values.Length; i++)

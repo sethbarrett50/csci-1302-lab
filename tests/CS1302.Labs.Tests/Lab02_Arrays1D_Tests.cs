@@ -10,7 +10,7 @@ public class Lab02_Arrays1D_Tests
     {
         int[] values = { 2, 5, -1, 4 };
 
-        var result = ArrayStats.Compute(values);
+        StatsResult result = ArrayStats.Compute(values);
 
         Assert.Equal(-1, result.Min);
         Assert.Equal(5, result.Max);

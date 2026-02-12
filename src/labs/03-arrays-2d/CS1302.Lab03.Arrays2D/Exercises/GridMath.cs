@@ -14,7 +14,7 @@ public static class GridMath
         int rows = grid.GetLength(0);
         int cols = grid.GetLength(1);
 
-        var sums = new int[rows];
+        int[]? sums = new int[rows];
 
         for (int r = 0; r < rows; r++)
         {
@@ -39,7 +39,7 @@ public static class GridMath
         int rows = grid.GetLength(0);
         int cols = grid.GetLength(1);
 
-        var sums = new int[cols];
+        int[]? sums = new int[cols];
 
         for (int c = 0; c < cols; c++)
         {
