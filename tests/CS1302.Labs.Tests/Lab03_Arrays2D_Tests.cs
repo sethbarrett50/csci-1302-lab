@@ -27,9 +27,9 @@ public class Lab03_Arrays2D_Tests
             { 9, 3 },
         };
 
-        MaxCell max = GridMath.MaxValue(grid);
-        Assert.Equal(9, max.Value);
-        Assert.Equal(1, max.Row);
-        Assert.Equal(0, max.Col);
+        int[] max = GridMath.MaxValue(grid);
+        Assert.Equal(9, max[0]);
+        Assert.Equal(1, max[1]);
+        Assert.Equal(0, max[2]);
     }
 }

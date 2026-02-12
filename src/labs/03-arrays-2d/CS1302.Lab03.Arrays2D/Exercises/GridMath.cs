@@ -1,12 +1,10 @@
 namespace CS1302.Lab03.Arrays2D.Exercises;
 
-public readonly record struct MaxCell(int Value, int Row, int Col);
-
 public static class GridMath
 {
     public static int[] RowSums(int[,] grid)
     {
-        if (grid is null)
+        if (grid == null)
         {
             throw new ArgumentNullException(nameof(grid));
         }
@@ -14,7 +12,7 @@ public static class GridMath
         int rows = grid.GetLength(0);
         int cols = grid.GetLength(1);
 
-        int[]? sums = new int[rows];
+        int[] sums = new int[rows];
 
         for (int r = 0; r < rows; r++)
         {
@@ -31,7 +29,7 @@ public static class GridMath
 
     public static int[] ColumnSums(int[,] grid)
     {
-        if (grid is null)
+        if (grid == null)
         {
             throw new ArgumentNullException(nameof(grid));
         }
@@ -39,7 +37,7 @@ public static class GridMath
         int rows = grid.GetLength(0);
         int cols = grid.GetLength(1);
 
-        int[]? sums = new int[cols];
+        int[] sums = new int[cols];
 
         for (int c = 0; c < cols; c++)
         {
@@ -54,9 +52,9 @@ public static class GridMath
         return sums;
     }
 
-    public static MaxCell MaxValue(int[,] grid)
+    public static int[] MaxValue(int[,] grid)
     {
-        if (grid is null)
+        if (grid == null)
         {
             throw new ArgumentNullException(nameof(grid));
         }
@@ -66,10 +64,7 @@ public static class GridMath
 
         if (rows == 0 || cols == 0)
         {
-            throw new ArgumentException(
-                "Grid must have at least 1 row and 1 column.",
-                nameof(grid)
-            );
+            throw new ArgumentException("Grid must have at least 1 row and 1 column.", nameof(grid));
         }
 
         int bestVal = grid[0, 0];
@@ -90,6 +85,6 @@ public static class GridMath
             }
         }
 
-        return new MaxCell(bestVal, bestR, bestC);
+        return new int[] { bestVal, bestR, bestC };
     }
 }
