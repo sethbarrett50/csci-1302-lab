@@ -1,38 +1,61 @@
 namespace CS1302.Lab01.Uml.Models;
 
-public sealed class Library
+public class Library
 {
-    private readonly List<Book> _books = new();
-
-    public IReadOnlyList<Book> Books => _books;
+    public List<Book> Books { get; } = new List<Book>();
 
     public void AddBook(Book book)
     {
-        ArgumentNullException.ThrowIfNull(book);
-        _books.Add(book);
+        if (book == null)
+        {
+            throw new ArgumentNullException(nameof(book));
+        }
+
+        Books.Add(book);
     }
 
     public Book? FindByTitle(string title)
     {
-        if (string.IsNullOrWhiteSpace(title))
+        if (title == null)
+        {
+            throw new ArgumentNullException(nameof(title));
+        }
+
+        if (title.Trim().Length == 0)
         {
             return null;
         }
 
-        return _books.FirstOrDefault(b =>
-            string.Equals(b.Title, title, StringComparison.OrdinalIgnoreCase)
-        );
+        for (int i = 0; i < Books.Count; i++)
+        {
+            Book b = Books[i];
+
+            if (string.Equals(b.Title, title, StringComparison.OrdinalIgnoreCase))
+            {
+                return b;
+            }
+        }
+
+        return null;
     }
 
     public void CheckOut(Book book)
     {
-        ArgumentNullException.ThrowIfNull(book);
+        if (book == null)
+        {
+            throw new ArgumentNullException(nameof(book));
+        }
+
         book.CheckOut();
     }
 
     public void Return(Book book)
     {
-        ArgumentNullException.ThrowIfNull(book);
+        if (book == null)
+        {
+            throw new ArgumentNullException(nameof(book));
+        }
+
         book.Return();
     }
 }

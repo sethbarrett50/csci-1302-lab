@@ -27,8 +27,8 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("-- Max value + coordinates --");
-        var max = GridMath.MaxValue(grid);
-        Console.WriteLine($"Max: {max.Value} at (row={max.Row}, col={max.Col})");
+        int[] max = GridMath.MaxValue(grid);
+        Console.WriteLine($"Max: {max[0]} at (row={max[1]}, col={max[2]})");
     }
 
     private static void PrintArray(int[] arr)

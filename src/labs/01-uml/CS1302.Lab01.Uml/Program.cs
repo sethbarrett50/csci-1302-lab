@@ -6,7 +6,7 @@ public static class Program
 {
     public static void Main()
     {
-        var library = new Library();
+        Library library = new Library();
 
         library.AddBook(new Book("Dune", "Frank Herbert"));
         library.AddBook(new Book("The Hobbit", "J.R.R. Tolkien"));
@@ -16,8 +16,8 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("Checking out 'Dune'...");
-        var dune = library.FindByTitle("Dune");
-        if (dune is not null)
+        Book? dune = library.FindByTitle("Dune");
+        if (dune != null)
         {
             library.CheckOut(dune);
         }
@@ -26,7 +26,7 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("Returning 'Dune'...");
-        if (dune is not null)
+        if (dune != null)
         {
             library.Return(dune);
         }
@@ -37,7 +37,7 @@ public static class Program
     private static void PrintStatus(Library library)
     {
         Console.WriteLine("Library Inventory:");
-        foreach (var book in library.Books)
+        foreach (Book book in library.Books)
         {
             Console.WriteLine(
                 $"- {book.Title} by {book.Author} (Checked out: {book.IsCheckedOut})"

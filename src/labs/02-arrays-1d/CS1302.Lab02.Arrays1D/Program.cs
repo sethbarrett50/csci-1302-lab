@@ -13,11 +13,11 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("-- Stats --");
-        var stats = ArrayStats.Compute(numbers);
-        Console.WriteLine($"Min: {stats.Min}");
-        Console.WriteLine($"Max: {stats.Max}");
-        Console.WriteLine($"Avg: {stats.Average:F2}");
-        Console.WriteLine($"EvenCount: {stats.EvenCount}");
+        double[] stats = ArrayStats.Compute(numbers);
+        Console.WriteLine($"Min: {stats[0]}");
+        Console.WriteLine($"Max: {stats[1]}");
+        Console.WriteLine($"Avg: {stats[2]:F2}");
+        Console.WriteLine($"EvenCount: {stats[3]}");
 
         Console.WriteLine();
         Console.WriteLine("-- Search + Replace --");
@@ -27,7 +27,7 @@ public static class Program
         int replaced = ArraySearch.ReplaceAll(words, "cat", "fox", ignoreCase: true);
         Console.WriteLine($"Replaced: {replaced}");
         Console.WriteLine("Updated array:");
-        foreach (var w in words)
+        foreach (string w in words)
         {
             Console.WriteLine($"- {w}");
         }

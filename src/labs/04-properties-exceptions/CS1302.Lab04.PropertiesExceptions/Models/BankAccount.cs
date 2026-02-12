@@ -1,6 +1,6 @@
 namespace CS1302.Lab04.PropertiesExceptions.Models;
 
-public sealed class BankAccount
+public class BankAccount
 {
     public BankAccount(string owner, decimal startingBalance)
     {

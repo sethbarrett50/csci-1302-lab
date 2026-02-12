@@ -26,3 +26,6 @@ coverage/
 
 # Logs
 *.log
+
+# Mac messing up
+csci-1302-lab.sln

@@ -3,19 +3,19 @@ using Xunit;
 
 namespace CS1302.Labs.Tests;
 
-public sealed class Lab02_Arrays1D_Tests
+public class Lab02_Arrays1D_Tests
 {
     [Fact]
     public void Stats_Computes_MinMaxAvgEvenCount()
     {
         int[] values = { 2, 5, -1, 4 };
 
-        var result = ArrayStats.Compute(values);
+        double[] result = ArrayStats.Compute(values);
 
-        Assert.Equal(-1, result.Min);
-        Assert.Equal(5, result.Max);
-        Assert.Equal(2.5, result.Average, 5);
-        Assert.Equal(2, result.EvenCount);
+        Assert.Equal(-1, result[0]);
+        Assert.Equal(5, result[1]);
+        Assert.Equal(2.5, result[2], 5);
+        Assert.Equal(2, result[3]);
     }
 
     [Fact]

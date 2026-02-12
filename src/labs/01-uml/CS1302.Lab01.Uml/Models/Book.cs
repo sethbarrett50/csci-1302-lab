@@ -1,6 +1,6 @@
 namespace CS1302.Lab01.Uml.Models;
 
-public sealed class Book
+public class Book
 {
     public Book(string title, string author)
     {

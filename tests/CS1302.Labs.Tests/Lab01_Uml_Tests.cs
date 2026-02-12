@@ -3,12 +3,12 @@ using Xunit;
 
 namespace CS1302.Labs.Tests;
 
-public sealed class Lab01_Uml_Tests
+public class Lab01_Uml_Tests
 {
     [Fact]
     public void Book_CheckOut_Then_Return_Works()
     {
-        var book = new Book("Dune", "Frank Herbert");
+        Book book = new Book("Dune", "Frank Herbert");
 
         Assert.False(book.IsCheckedOut);
 
@@ -22,10 +22,10 @@ public sealed class Lab01_Uml_Tests
     [Fact]
     public void Library_FindByTitle_IsCaseInsensitive()
     {
-        var lib = new Library();
+        Library lib = new Library();
         lib.AddBook(new Book("Dune", "Frank Herbert"));
 
-        var found = lib.FindByTitle("dUnE");
+        Book? found = lib.FindByTitle("dUnE");
         Assert.NotNull(found);
         Assert.Equal("Dune", found!.Title);
     }

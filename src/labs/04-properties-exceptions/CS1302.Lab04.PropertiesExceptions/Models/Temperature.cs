@@ -1,6 +1,6 @@
 namespace CS1302.Lab04.PropertiesExceptions.Models;
 
-public sealed class Temperature
+public class Temperature
 {
     private const double AbsoluteZeroC = -273.15;
 

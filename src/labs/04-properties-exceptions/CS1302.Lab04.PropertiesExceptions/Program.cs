@@ -10,7 +10,7 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("-- BankAccount --");
-        var acct = new BankAccount("Seth", 100m);
+        BankAccount acct = new BankAccount("Seth", 100m);
         Console.WriteLine(acct);
 
         acct.Deposit(25m);
@@ -32,7 +32,7 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("-- Temperature --");
-        var t = new Temperature(21.0);
+        Temperature t = new Temperature(21.0);
         Console.WriteLine($"C: {t.Celsius}, F: {t.Fahrenheit:F1}");
 
         Console.WriteLine("Trying invalid temperature...");
