@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CS1302.Labs.Tests;
 
-public sealed class Lab04_PropsExceptions_Tests
+public class Lab04_PropsExceptions_Tests
 {
     [Fact]
     public void BankAccount_Rejects_Overdraft()

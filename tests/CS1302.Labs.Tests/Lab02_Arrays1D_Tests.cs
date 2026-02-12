@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CS1302.Labs.Tests;
 
-public sealed class Lab02_Arrays1D_Tests
+public class Lab02_Arrays1D_Tests
 {
     [Fact]
     public void Stats_Computes_MinMaxAvgEvenCount()

@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CS1302.Labs.Tests;
 
-public sealed class Lab01_Uml_Tests
+public class Lab01_Uml_Tests
 {
     [Fact]
     public void Book_CheckOut_Then_Return_Works()

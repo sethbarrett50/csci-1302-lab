@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CS1302.Labs.Tests;
 
-public sealed class Lab03_Arrays2D_Tests
+public class Lab03_Arrays2D_Tests
 {
     [Fact]
     public void RowSums_And_ColumnSums_Work()
