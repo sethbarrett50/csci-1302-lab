@@ -1,12 +1,10 @@
 namespace CS1302.Lab02.Arrays1D.Exercises;
 
-public readonly record struct StatsResult(int Min, int Max, double Average, int EvenCount);
-
 public static class ArrayStats
 {
-    public static StatsResult Compute(int[] values)
+    public static double[] Compute(int[] values)
     {
-        if (values is null)
+        if (values == null)
         {
             throw new ArgumentNullException(nameof(values));
         }
@@ -21,12 +19,12 @@ public static class ArrayStats
         long sum = 0;
         int evenCount = 0;
 
-        foreach (int v in values)
+        for (int i = 0; i < values.Length; i++)
         {
-            if (v < min)
-                min = v;
-            if (v > max)
-                max = v;
+            int v = values[i];
+
+            if (v < min) min = v;
+            if (v > max) max = v;
 
             sum += v;
 
@@ -37,6 +35,7 @@ public static class ArrayStats
         }
 
         double avg = (double)sum / values.Length;
-        return new StatsResult(min, max, avg, evenCount);
+
+        return new double[] { min, max, avg, evenCount };
     }
 }

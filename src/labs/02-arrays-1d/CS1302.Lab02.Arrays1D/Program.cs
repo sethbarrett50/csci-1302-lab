@@ -13,11 +13,11 @@ public static class Program
 
         Console.WriteLine();
         Console.WriteLine("-- Stats --");
-        StatsResult stats = ArrayStats.Compute(numbers);
-        Console.WriteLine($"Min: {stats.Min}");
-        Console.WriteLine($"Max: {stats.Max}");
-        Console.WriteLine($"Avg: {stats.Average:F2}");
-        Console.WriteLine($"EvenCount: {stats.EvenCount}");
+        double[] stats = ArrayStats.Compute(numbers);
+        Console.WriteLine($"Min: {stats[0]}");
+        Console.WriteLine($"Max: {stats[1]}");
+        Console.WriteLine($"Avg: {stats[2]:F2}");
+        Console.WriteLine($"EvenCount: {stats[3]}");
 
         Console.WriteLine();
         Console.WriteLine("-- Search + Replace --");
