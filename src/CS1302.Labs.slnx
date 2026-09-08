@@ -24,6 +24,9 @@
     <Folder Name="/labs/08-abstract-classes/">
         <Project Path="labs/08-abstract-classes/CS1302.Lab08.AbstractClasses/CS1302.Lab08.AbstractClasses.csproj" />
     </Folder>
+    <Folder Name="/labs/09-interfaces/">
+        <Project Path="labs/09-interfaces/CS1302.Lab09.Interfaces/CS1302.Lab09.Interfaces.csproj" />
+    </Folder>
     <Folder Name="/shared/">
         <Project Path="shared/CS1302.Common/CS1302.Common.csproj" />
     </Folder>

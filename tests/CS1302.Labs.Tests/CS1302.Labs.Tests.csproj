@@ -24,5 +24,6 @@
         <ProjectReference Include="..\..\src\labs\06-inheritance\CS1302.Lab06.Inheritance\CS1302.Lab06.Inheritance.csproj" />
         <ProjectReference Include="..\..\src\labs\07-polymorphism\CS1302.Lab07.Polymorphism\CS1302.Lab07.Polymorphism.csproj" />
         <ProjectReference Include="..\..\src\labs\08-abstract-classes\CS1302.Lab08.AbstractClasses\CS1302.Lab08.AbstractClasses.csproj" />
+        <ProjectReference Include="..\..\src\labs\09-interfaces\CS1302.Lab09.Interfaces\CS1302.Lab09.Interfaces.csproj" />
     </ItemGroup>
 </Project>
