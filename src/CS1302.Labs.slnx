@@ -54,6 +54,9 @@
     <Folder Name="/labs/18-references/">
         <Project Path="labs/18-references/CS1302.Lab18.References/CS1302.Lab18.References.csproj" />
     </Folder>
+    <Folder Name="/labs/19-random-overflow/">
+        <Project Path="labs/19-random-overflow/CS1302.Lab19.RandomOverflow/CS1302.Lab19.RandomOverflow.csproj" />
+    </Folder>
     <Folder Name="/shared/">
         <Project Path="shared/CS1302.Common/CS1302.Common.csproj" />
     </Folder>
