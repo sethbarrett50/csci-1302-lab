@@ -15,9 +15,7 @@ public static class SafeCalculator
             case "/":
                 return left / right;
             default:
-                throw new InvalidOperatorException(
-                    $"Unrecognized operator: \"{operatorSymbol}\"."
-                );
+                throw new InvalidOperatorException($"Unrecognized operator: \"{operatorSymbol}\".");
         }
     }
 }
