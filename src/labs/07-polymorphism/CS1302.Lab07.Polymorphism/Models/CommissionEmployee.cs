@@ -6,7 +6,12 @@ public class CommissionEmployee : Employee
     public decimal SalesTotal { get; }
     public decimal CommissionRate { get; }
 
-    public CommissionEmployee(string name, decimal baseSalary, decimal salesTotal, decimal commissionRate)
+    public CommissionEmployee(
+        string name,
+        decimal baseSalary,
+        decimal salesTotal,
+        decimal commissionRate
+    )
         : base(name)
     {
         BaseSalary = baseSalary;
