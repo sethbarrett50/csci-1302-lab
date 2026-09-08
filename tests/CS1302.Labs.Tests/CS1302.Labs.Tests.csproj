@@ -31,5 +31,6 @@
         <ProjectReference Include="..\..\src\labs\13-trees\CS1302.Lab13.Trees\CS1302.Lab13.Trees.csproj" />
         <ProjectReference Include="..\..\src\labs\14-dictionaries\CS1302.Lab14.Dictionaries\CS1302.Lab14.Dictionaries.csproj" />
         <ProjectReference Include="..\..\src\labs\15-sorting\CS1302.Lab15.Sorting\CS1302.Lab15.Sorting.csproj" />
+        <ProjectReference Include="..\..\src\labs\16-file-io\CS1302.Lab16.FileIO\CS1302.Lab16.FileIO.csproj" />
     </ItemGroup>
 </Project>

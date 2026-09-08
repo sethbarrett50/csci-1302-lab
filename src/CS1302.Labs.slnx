@@ -45,6 +45,9 @@
     <Folder Name="/labs/15-sorting/">
         <Project Path="labs/15-sorting/CS1302.Lab15.Sorting/CS1302.Lab15.Sorting.csproj" />
     </Folder>
+    <Folder Name="/labs/16-file-io/">
+        <Project Path="labs/16-file-io/CS1302.Lab16.FileIO/CS1302.Lab16.FileIO.csproj" />
+    </Folder>
     <Folder Name="/shared/">
         <Project Path="shared/CS1302.Common/CS1302.Common.csproj" />
     </Folder>
