@@ -33,5 +33,6 @@
         <ProjectReference Include="..\..\src\labs\15-sorting\CS1302.Lab15.Sorting\CS1302.Lab15.Sorting.csproj" />
         <ProjectReference Include="..\..\src\labs\16-file-io\CS1302.Lab16.FileIO\CS1302.Lab16.FileIO.csproj" />
         <ProjectReference Include="..\..\src\labs\17-exceptions\CS1302.Lab17.Exceptions\CS1302.Lab17.Exceptions.csproj" />
+        <ProjectReference Include="..\..\src\labs\18-references\CS1302.Lab18.References\CS1302.Lab18.References.csproj" />
     </ItemGroup>
 </Project>

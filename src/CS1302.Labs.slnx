@@ -51,6 +51,9 @@
     <Folder Name="/labs/17-exceptions/">
         <Project Path="labs/17-exceptions/CS1302.Lab17.Exceptions/CS1302.Lab17.Exceptions.csproj" />
     </Folder>
+    <Folder Name="/labs/18-references/">
+        <Project Path="labs/18-references/CS1302.Lab18.References/CS1302.Lab18.References.csproj" />
+    </Folder>
     <Folder Name="/shared/">
         <Project Path="shared/CS1302.Common/CS1302.Common.csproj" />
     </Folder>
