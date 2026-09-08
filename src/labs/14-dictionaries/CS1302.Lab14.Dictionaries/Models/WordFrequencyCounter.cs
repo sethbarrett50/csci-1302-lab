@@ -4,7 +4,9 @@ public static class WordFrequencyCounter
 {
     public static Dictionary<string, int> CountWords(IEnumerable<string> words)
     {
-        Dictionary<string, int> counts = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+        Dictionary<string, int> counts = new Dictionary<string, int>(
+            StringComparer.OrdinalIgnoreCase
+        );
 
         foreach (string word in words)
         {
