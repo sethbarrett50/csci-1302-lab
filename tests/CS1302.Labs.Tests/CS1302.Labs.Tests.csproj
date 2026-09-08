@@ -20,5 +20,21 @@
         <ProjectReference Include="..\..\src\labs\02-arrays-1d\CS1302.Lab02.Arrays1D\CS1302.Lab02.Arrays1D.csproj" />
         <ProjectReference Include="..\..\src\labs\03-arrays-2d\CS1302.Lab03.Arrays2D\CS1302.Lab03.Arrays2D.csproj" />
         <ProjectReference Include="..\..\src\labs\04-properties-exceptions\CS1302.Lab04.PropertiesExceptions\CS1302.Lab04.PropertiesExceptions.csproj" />
+        <ProjectReference Include="..\..\src\labs\05-static-members\CS1302.Lab05.StaticMembers\CS1302.Lab05.StaticMembers.csproj" />
+        <ProjectReference Include="..\..\src\labs\06-inheritance\CS1302.Lab06.Inheritance\CS1302.Lab06.Inheritance.csproj" />
+        <ProjectReference Include="..\..\src\labs\07-polymorphism\CS1302.Lab07.Polymorphism\CS1302.Lab07.Polymorphism.csproj" />
+        <ProjectReference Include="..\..\src\labs\08-abstract-classes\CS1302.Lab08.AbstractClasses\CS1302.Lab08.AbstractClasses.csproj" />
+        <ProjectReference Include="..\..\src\labs\09-interfaces\CS1302.Lab09.Interfaces\CS1302.Lab09.Interfaces.csproj" />
+        <ProjectReference Include="..\..\src\labs\10-generics\CS1302.Lab10.Generics\CS1302.Lab10.Generics.csproj" />
+        <ProjectReference Include="..\..\src\labs\11-custom-lists\CS1302.Lab11.CustomLists\CS1302.Lab11.CustomLists.csproj" />
+        <ProjectReference Include="..\..\src\labs\12-stacks-queues\CS1302.Lab12.StacksQueues\CS1302.Lab12.StacksQueues.csproj" />
+        <ProjectReference Include="..\..\src\labs\13-trees\CS1302.Lab13.Trees\CS1302.Lab13.Trees.csproj" />
+        <ProjectReference Include="..\..\src\labs\14-dictionaries\CS1302.Lab14.Dictionaries\CS1302.Lab14.Dictionaries.csproj" />
+        <ProjectReference Include="..\..\src\labs\15-sorting\CS1302.Lab15.Sorting\CS1302.Lab15.Sorting.csproj" />
+        <ProjectReference Include="..\..\src\labs\16-file-io\CS1302.Lab16.FileIO\CS1302.Lab16.FileIO.csproj" />
+        <ProjectReference Include="..\..\src\labs\17-exceptions\CS1302.Lab17.Exceptions\CS1302.Lab17.Exceptions.csproj" />
+        <ProjectReference Include="..\..\src\labs\18-references\CS1302.Lab18.References\CS1302.Lab18.References.csproj" />
+        <ProjectReference Include="..\..\src\labs\19-random-overflow\CS1302.Lab19.RandomOverflow\CS1302.Lab19.RandomOverflow.csproj" />
+        <ProjectReference Include="..\..\src\labs\20-recursion\CS1302.Lab20.Recursion\CS1302.Lab20.Recursion.csproj" />
     </ItemGroup>
 </Project>
